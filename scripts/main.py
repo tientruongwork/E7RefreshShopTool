@@ -1,8 +1,6 @@
 import argparse
 import time
 
-import pyautogui
-
 from log import log
 from measure_process import get_covenant_bought, get_mystic_bought, get_refreshed_times
 from init_app import init_app

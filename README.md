@@ -7,6 +7,7 @@
 ## Limitation
 - Only support BlueStacks at the moment
 - Only support Windows OS at the moment
+- Only works when moved BlueStack to primary monitor (incase you're using multiple monitor)
 
 ## Installation
 - Download this repo and extract it

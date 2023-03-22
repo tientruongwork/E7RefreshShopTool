@@ -1,4 +1,6 @@
 scripts/.idea
 scripts/__pycache__
 scripts/coordinates_config.py
+installation/python_installation.exe
+installation/tesseract-ocr_installation.exe
 .idea

@@ -21,9 +21,6 @@ def scan_for_items(application_rect, scrolled):
     log("Scanning for item")
     boxes = capture(application_rect)
     buy_list = get_coordinate_from_texts(boxes, list_items)
+    buy_item_in_list(buy_list, application_rect)
 
-    if not scrolled:
-        buy_item_in_list(buy_list, application_rect)
-    else:
-        buy_item_in_list(buy_list, application_rect)
-        click_refresh()
+    if scrolled: click_refresh()

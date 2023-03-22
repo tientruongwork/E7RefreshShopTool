@@ -10,12 +10,9 @@ def get_coordinate_from_texts(boxes, texts):
         box_text = boxes['text'][i]
         if box_text in texts:
             classify_bought_item(box_text)
-
-            buy_list.append(boxes['left'][i])
-            buy_list.append(boxes['top'][i])
-            break
+            buy_list.append([boxes['left'][i], boxes['top'][i]])
 
     if len(buy_list) == 0:
         return 0, 0
 
-    return buy_list[0], buy_list[1]
+    return buy_list

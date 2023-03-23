@@ -29,10 +29,10 @@
 - Double click on `install_packages.bat`
 - Wait for the process is success
 
-### 4. Setup coordinates
-- Back to the root dir (where `setup_coordinates.bat` is placed)
-- Double click on `setup_coordinates.bat`. Then it'll asked for 4 action
 
+## How to use
+### 1. Setup coordinates:
+- Double click on `setup_coordinates.bat`. Then it'll asked for 4 action
 - *Q1. "Hover to "Refresh" button then hit Enter:*
 ![image](https://user-images.githubusercontent.com/99798487/226973885-88b23ab5-b806-4477-9f68-a83608496f93.png)
 - *Q2. "Click on "Refresh" button, hover to "Confirm" button then hit Enter*
@@ -42,7 +42,7 @@
 - *Q4. "Hover to the blank space between item name and price, then hit Enter"*
 ![image](https://user-images.githubusercontent.com/99798487/226974612-1945891d-fa27-4bc1-91ea-55f5f05551aa.png)
 
-## How to use
+### 2. Start automate scripts:
 - Right click on `start.bat`
 - Click on `Run as Administrator`
 - Input the refresh times you want then hit Enter

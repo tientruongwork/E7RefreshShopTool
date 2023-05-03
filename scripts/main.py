@@ -3,7 +3,6 @@ import time
 
 from log import log
 from measure_process import get_covenant_bought, get_mystic_bought, get_refreshed_times
-from init_app import init_app
 from scroll import scroll
 from scan_for_items import scan_for_items
 
@@ -24,11 +23,11 @@ def endFlow(duration):
     print("Refreshed time: " + str(get_refreshed_times()))
 
 
-def refresh_shop_flow(application_rect):
+def refresh_shop_flow():
     log("Started new flow")
-    scan_for_items(application_rect, False)
+    scan_for_items(False)
     scroll()
-    scan_for_items(application_rect, True)
+    scan_for_items(True)
 
 
 def main():
@@ -38,9 +37,8 @@ def main():
     startFlow()
     start_time = time.time()
 
-    application_rect = init_app()
     for i in range(args.times):
-        refresh_shop_flow(application_rect)
+        refresh_shop_flow()
 
     duration = time.time() - start_time
     endFlow(duration)

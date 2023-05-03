@@ -4,10 +4,12 @@ DEL ".\scripts\coordinates_config.py"
 
 
 echo Hover to "Refresh" button then hit Enter
+echo from init_app import app_rect > .\scripts\coordinates_config.py
+
 pause
 python ./scripts/get_pointer_position.py > Output
 SET /p REFRESH_BUTTON_RECT=<Output
-echo refresh_button_rect = %REFRESH_BUTTON_RECT% > .\scripts\coordinates_config.py
+echo refresh_button_rect = %REFRESH_BUTTON_RECT% >> .\scripts\coordinates_config.py
 echo Refresh button coordinate captured: %REFRESH_BUTTON_RECT%
 
 echo Click on "Refresh" button, hover to "Confirm" button then hit Enter

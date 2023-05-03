@@ -1,13 +1,12 @@
-import pyautogui
-import time
-from pynput.mouse import Button
 from coordinates_config import blank_rect
-from mouse import mouse
+from init_app import child_app
+import win32gui, win32con,win32api
+
 
 
 def scroll():
-    pyautogui.moveTo(x=blank_rect[0], y=blank_rect[1])
-    mouse.click(Button.left, 2)
-    time.sleep(0.1)
-    pyautogui.scroll(-10)
-    time.sleep(1)
+    scroll_event = win32api.MAKELONG(blank_rect[0], blank_rect[1])
+
+    win32gui.PostMessage(child_app, win32con.WM_LBUTTONDOWN, win32con.MK_LBUTTON, scroll_event)
+    win32gui.PostMessage(child_app, win32con.WM_MOUSEMOVE, win32con.MK_LBUTTON, win32api.MAKELONG(blank_rect[0], 100))
+    win32gui.PostMessage(child_app, win32con.WM_LBUTTONUP, None, scroll_event)

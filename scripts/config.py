@@ -1,4 +1,4 @@
-application_name = "BlueStacks App Player"
+application_name = "Epic7"
 
 covenant_bookmarks = "Covenant"
 

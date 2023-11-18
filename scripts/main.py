@@ -5,6 +5,8 @@ from log import log
 from measure_process import get_covenant_bought, get_mystic_bought, get_refreshed_times
 from scroll import scroll
 from scan_for_items import scan_for_items
+import os
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--times", dest="times", type=int, help="Number of shop reset times")
@@ -25,6 +27,7 @@ def endFlow(duration):
 
 def refresh_shop_flow():
     log("Started new flow")
+    time.sleep(2)
     scan_for_items(False)
     scroll()
     scan_for_items(True)

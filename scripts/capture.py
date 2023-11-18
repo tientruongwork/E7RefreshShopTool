@@ -6,6 +6,8 @@ from init_app import parent_app, app_rect
 from PIL import Image
 from ctypes import windll
 
+pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
+
 def capture_handler():
     hwndDC = win32gui.GetWindowDC(parent_app)
     mfcDC = win32ui.CreateDCFromHandle(hwndDC)

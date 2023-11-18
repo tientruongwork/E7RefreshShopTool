@@ -22,5 +22,5 @@ def scan_for_items(scrolled):
     boxes = capture()
     buy_list = get_coordinate_from_texts(boxes, list_items)
     buy_item_in_list(buy_list)
-
+    time.sleep(1)
     if scrolled: click_refresh()

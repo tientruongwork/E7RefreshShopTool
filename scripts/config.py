@@ -1,4 +1,4 @@
-application_name = "Epic7"
+application_name = "Epic Seven"
 
 covenant_bookmarks = "Covenant"
 

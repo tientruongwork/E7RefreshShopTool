@@ -1,4 +1,4 @@
-# E7RefreshShopTool
+![image](https://github.com/tientruongwork/E7RefreshShopTool/assets/99798487/cddcf4cf-db9f-438a-9d1b-f4c2e9ab4e29)# E7RefreshShopTool
 
 ## Overview
 - This tool use to automate refresh shop action in EpicSeven (mobile game)
@@ -31,7 +31,12 @@
 
 
 ## How to use
-### 1. Setup coordinates:
+### 1. Make sure application name is corrects:
+- Go to `scripts/config.py`
+- Update application name which equals to your LD player application name
+![Screenshot 2024-01-13 111358](https://github.com/tientruongwork/E7RefreshShopTool/assets/99798487/c0658ddc-9586-4ffb-939b-243f60ea6388)
+
+### 2. Setup coordinates:
 - Double click on `setup_coordinates.bat`. Then it'll asked for 4 action
 - *Q1. "Hover to "Refresh" button then hit Enter:*
 ![image](https://user-images.githubusercontent.com/99798487/226973885-88b23ab5-b806-4477-9f68-a83608496f93.png)
@@ -42,7 +47,7 @@
 - *Q4. "Hover to the blank space between item name and price, then hit Enter"*
 ![image](https://user-images.githubusercontent.com/99798487/226974612-1945891d-fa27-4bc1-91ea-55f5f05551aa.png)
 
-### 2. Start automate scripts:
+### 3. Start automate scripts:
 - Right click on `start.bat`
 - Click on `Run as Administrator`
 - Input the refresh times you want then hit Enter

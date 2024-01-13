@@ -30,6 +30,7 @@ def refresh_shop_flow():
     time.sleep(2)
     scan_for_items(False)
     scroll()
+    time.sleep(0.5)
     scan_for_items(True)
 
 

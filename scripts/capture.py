@@ -41,8 +41,10 @@ def capture_handler():
 
 def capture():
     log("Capturing in game screen")
-    for i in range(2):
+    for i in range(1):
         capture_handler()
-        time.sleep(0.2)
+        time.sleep(0.1)
 
     return pytesseract.image_to_data("screenshot.png", output_type=Output.DICT)
+
+capture()

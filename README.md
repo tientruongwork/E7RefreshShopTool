@@ -1,4 +1,4 @@
-![image](https://github.com/tientruongwork/E7RefreshShopTool/assets/99798487/cddcf4cf-db9f-438a-9d1b-f4c2e9ab4e29)# E7RefreshShopTool
+E7RefreshShopTool
 
 ## Overview
 - This tool use to automate refresh shop action in EpicSeven (mobile game)
@@ -33,7 +33,7 @@
 ## How to use
 ### 1. Make sure application name is corrects:
 - Go to `scripts/config.py`
-- Update application name which equals to your LD player application name
+- Update "application_name" which equals to your LD player application name (In my case is "Epic7")
 ![Screenshot 2024-01-13 111358](https://github.com/tientruongwork/E7RefreshShopTool/assets/99798487/c0658ddc-9586-4ffb-939b-243f60ea6388)
 
 ### 2. Setup coordinates:
